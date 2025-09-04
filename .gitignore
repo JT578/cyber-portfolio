@@ -1,0 +1,30 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# Node
+node_modules/
+
+# Logs & temp
+*.log
+*.tmp
+*.bak
+
+# Local env
+.env
+secrets.json
+
+# Generated
+*.zip
+*.pdf
+images/screens/*

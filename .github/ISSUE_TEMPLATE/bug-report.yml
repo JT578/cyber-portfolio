@@ -1,0 +1,19 @@
+name: Bug report
+description: Report a problem with scripts/configs in this repo
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened?
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: Steps to reproduce
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "OS, versions"
