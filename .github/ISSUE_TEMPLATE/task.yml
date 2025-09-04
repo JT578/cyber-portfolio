@@ -1,0 +1,19 @@
+﻿name: Task
+description: Track a Week task
+title: "[Task] <short title>"
+labels: ["task"]
+body:
+  - type: input
+    id: goal
+    attributes: { label: Goal }
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes: { label: Steps }
+  - type: checkboxes
+    id: evidence
+    attributes:
+      label: Evidence
+      options:
+        - label: Pushed notes/screenshots to evidence/
+        - label: Linked commit/PR
