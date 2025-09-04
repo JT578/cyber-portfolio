@@ -1,29 +1,32 @@
-# Cyber Portfolio
+# Jacob Tatkenhorst — Cybersecurity Portfolio & College Archive
 
-A hands-on cybersecurity portfolio structured for a 12-week, 10-hours/week sampler.  
-This repo will collect artifacts across Blue Team, Threat Hunting, AppSec, DevSecOps, Cloud, IR/DFIR, IAM, GRC, and SIEM validation.
+Hands-on portfolio, coursework, and notes in one place. Focus areas: Blue Team, DFIR, AppSec, Cloud/DevSecOps, IAM, GRC. Built to grow semester by semester.
 
-## Weeks & Folders
-- `01-setup/` — Lab bootstrap, safety/ethics, baseline logging (Week 1)
-- `02-detections-sigma/` — Windows log detections (Week 2)
-- `03-threat-hunt-pcap/` — Zeek/Wireshark hunt (Week 3)
-- `04-appsec-juice-shop/` — OWASP Juice Shop mini-pentest (Week 4)
-- `05-devsecops-ci/` — CI security gates (Week 5)
-- `06-cloud-iac-security/` — Terraform + policy-as-code (Week 6)
-- `07-ir-triage-timeline/` — Host triage & timeline (Week 7)
-- `08-dfir-memory/` — Volatility3 analysis (Week 8)
-- `09-iam-rbac/` — Identity & MFA with RBAC (Week 9)
-- `10-grc-risk/` — Risk register & policies (Week 10)
-- `11-mini-siem-purple/` — Wazuh/Elastic + Atomic tests (Week 11)
-- `12-capstone/` — Showcase & specialization choice (Week 12)
+## Current focus
+- Building a multi-lane security portfolio with weekly artifacts
+- Tight writeups: goal → method → evidence → result → next
+- Choosing a specialization by evidence, not vibes
 
-## Week 1 Deliverables (Checklist)
-- [ ] `CODE_OF_CONDUCT.md`
-- [ ] `SECURITY.md`
-- [ ] `docs/SOP-HOW-I-RUN-LABS.md`
-- [ ] `docs/ETHICS-LAB-RULES.md`
-- [ ] Baseline Windows logging enabled (if on Windows): `01-setup/scripts/enable-windows-logging.ps1` executed as Admin
-- [ ] Create a GitHub Project board and issue templates
-- [ ] First commit and push to GitHub
+## Quick links
+- Portfolio index: [`/portfolio`](./portfolio)
+- Docs & SOPs: [`/docs`](./docs)
+- Notes: [`/notes`](./notes)
+- Scripts & tools: [`/tools`](./tools)
+- Cert prep: [`/cert-prep`](./cert-prep)
+
+## How I work
+- Plan with GitHub Issues and a Project board (Backlog → In Progress → Review → Done)
+- Evidence lives inside each project folder under `images/` and `logs/`
+- Every project has a `README.md` following the template in `/docs/TEMPLATES/LAB-README.md`
+
+## Ethics and scope
+- Lab-only work on assets I own or have explicit permission to test
+- No secrets in git; sanitize logs and screenshots
+- Large binaries (pcaps, memory images) are not tracked here; store externally or with LFS if needed
+
+## Setup
+- Primary OS: Windows with optional Linux VM or Docker Desktop
+- Core tools: Git, Zeek, Wireshark, Volatility 3, Sigma, Wazuh/Elastic Agent, Terraform, tfsec/checkov, CodeQL, Keycloak
+- See `/portfolio/01-setup` for baseline Windows logging scripts and repo bootstrap
 
 > Start date: 2025-09-04
